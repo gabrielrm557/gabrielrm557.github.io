@@ -1,0 +1,139 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background-color: #0074a2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0074a2;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #0074a2;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0074a2;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #333;
+}
+
+
+.container {
+    padding: 50px;
+    background-color: #fff;
+    margin: 35px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(30% - 20px); /* Define a largura para 30% com margens para criar 3 blocos por linha */
+    display: inline-block;
+    box-sizing: border-box;
+    height: 390px; /* Defina a altura desejada para cada bloco */
+    vertical-align: top; /* Alinhar os blocos no topo da linha */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+
+/* Estilo para dispositivos móveis (para tornar os blocos de largura total em telas menores) */
+@media (max-width: 768px) {
+    .container {
+        width: 50%; 
+        height: auto;
+    }
+}
+
+/* Estilos para o formulário de contato */
+#contact-form {
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 7px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0074a2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00557e;
+}
+.container.highlight {
+    background-color: #ddd; /* Defina a cor de destaque desejada */
+    transition: background-color 0.5s; /* Adiciona uma transição suave */
+}

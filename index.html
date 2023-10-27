@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currilo GRM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">  <!-- Inclui o arquivo CSS para estilizar a página -->
+</head>
+
+<body>
+    <header>
+        <h1>Meu Currículo</h1> <!-- Cabeçalho da página com o título "Meu Currículo" -->
+    </header>
+
+    <nav>
+        <!-- Menu de navegação com links para as seções e função onclick para destacar as seções -->
+        <a href="#sobre" onclick="highlightSection('sobre')">Sobre Mim</a>
+        <a href="#formacao" onclick="highlightSection('formacao')">Formação Educacional</a>
+        <a href="#experiencia" onclick="highlightSection('experiencia')">Experiência Profissional</a>
+        <a href="#habilidades" onclick="highlightSection('habilidades')">Habilidades</a>
+        <a href="#projetos" onclick="highlightSection('projetos')">Projetos</a>
+        <a href="#contato" onclick="highlightSection('contato')">Contato</a>
+    </nav>
+
+    <div class="container" id="sobre">
+          <!-- Seção "Sobre Mim" com informações pessoais -->
+        <h2>Sobre Mim</h2>
+        <p>
+           Olá, me chamo Gabriel Ruela de Matos, possuo 18 anos e trabalho como suporte ao cliente em uma provedora de internet,gosto de jogar,programar e estudar marketing 
+        </p>
+    </div>
+
+    <div class="container" id="formacao">
+          <!-- Seção "Formação Educacional" com informações sobre a educação -->
+        <h2>Formação Educacional</h2>
+        <p>
+            - [Ensino Medio]<br>
+            - [2022]<br>
+            - [Escola Estadual Pedro de Alcantara Nogueira]<br>
+        </p>
+    </div>
+
+    <div class="container" id="experiencia">
+         <!-- Seção "Experiência Profissional" com detalhes sobre o trabalho -->
+        <h2>Experiência Profissional</h2>
+        <p>
+            - [Suporte ao Cliente], [Nova telecom internet]<br>
+            - [Abril -- Atual]<br>
+            - [Configuração de roteadores,suporte financeiro]<br><br>
+        </p>
+    </div>
+
+    <div class="container" id="habilidades">
+        <!-- Seção "Habilidades" com uma lista de habilidades -->
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Inglês intermediario</li>
+            <li>Python</li>
+            <li>Pensamentos rapidos/li>
+        </ul>
+    </div>
+
+    <div class="container" id="projetos">
+          <!-- Seção "Projetos" com detalhes sobre projetos anteriores -->
+        <h2>Projetos</h2>
+        <p>
+            - [tela de login ]<br>
+            - [tela de login criado com script java para colocar em darkmode]<br><br>
+            - [Banco de dados Mysql]<br>
+            - [Banco de dados Mysql com consulta em disciplinas,alunos,grupos,etc]
+        </p>
+    </div>
+    <div class="container" id="contato">
+        <!-- Seção "Contato" com um formulário de contato -->
+        <h2>Contato</h2>
+        <p>
+            Entre em contato comigo preenchendo o formulário abaixo:
+        </p>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        // Função JavaScript para destacar a seção no menu
+        function highlightSection(sectionId) {
+            var sections = document.querySelectorAll('.container'); // Seleciona todos os blocos
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('highlight'); // Remove a classe de destaque de todos os blocos
+            }
+    
+            var section = document.getElementById(sectionId);
+            section.classList.add('highlight'); // Adiciona a classe de destaque à seção clicada
+        }
+    </script>
+</body>
+
+</html>
